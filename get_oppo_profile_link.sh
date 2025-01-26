@@ -14,6 +14,7 @@ tail -F $debug_file 2>&1 | while read -r line; do
         if [ -n "$oppo_id" ]; then
             clear
             echo "https://gudecks.com/meta/player-stats?gameMode=$mode&userId=$oppo_id"
+            echo "https://gumeta.web.app/ranked?userId=$oppo_id"
             start=false
         fi
     fi
